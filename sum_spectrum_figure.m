@@ -46,7 +46,7 @@ for i = 1:r
 
         subplot(3, 3, j+3);
         colormap jet
-        imagesc(stimes(idxStart:idxEnd), sfreqs, pow2db(spect_normalize(:,:)'));
+        imagesc(stimes(idxStart:idxEnd), sfreqs, pow2db(spect_normalize(idxStart:idxEnd,:)'));
         set(gca,'clim',[-10 30])
         axis xy;
         ylabel('Frequency (Hz)');
