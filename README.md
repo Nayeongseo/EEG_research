@@ -1,14 +1,13 @@
-# EEG_research_mouse
+# EEG_research_sevo
 
-### 생쥐에게 마취한 후, 마취 농도에 따른 생쥐의 EEG 변화 모습을 보기 위함.
-
-#### 관련 코드들을 정리해 올려두었음.
+### 사람 개개인의 마취제 투여 시 일어나는 섬망을 관찰하기 위함. 
 
 ##### 참고
-Channel: 1
+Channel: 4
+- 'EEGL1_Fp1','EEGR1_Fp2','EEGL2_F7','EEGR2_F8'
 
-mouse: 6
+Human: 42
 
-density: 1.4 ~ 2.4, 0.2 up
+anesthetic: Sevoflurane
 
 language: Matlab
