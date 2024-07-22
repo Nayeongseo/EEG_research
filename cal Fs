@@ -1,9 +1,0 @@
-% FS (sampling Rate 구하기)
-
-[EDF, annotations] = edfread(filePath);
-data_length = length(EDF.EEGEEG_4_SA_B{1})
-time1 = EDF.("Record Time")(1)
-time2 = EDF.("Record Time")(2)
-time = time2-time1;
-
-samlingrate = data_length/seconds(time);
