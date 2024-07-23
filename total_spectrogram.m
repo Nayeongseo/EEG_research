@@ -44,7 +44,9 @@ for i = 1:length(subject_num)
 
     end
     suptitle(subject_num{i});
-
+    set(fig1, 'PaperPositionMode','auto')
+    fname = [SaveFigdir, [subject_num{i}, 'sevo spectrogram']];
+    print('-dpng',fname);
     % .mat 파일로 저장
     disp('Saving data...')
     save([saveDir,'spect_',subject_num{i}], 'spect', 'stimes', 'sfreqs', '-v7.3');
