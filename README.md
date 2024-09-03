@@ -24,7 +24,7 @@ Language: Matlab
 
 - PSI_n: PSI data
   - PSI, time, timeDifferenceInSeconds
-    
+
 - spect_n: spectrum data
   - sfreqs, spect, stimes
   - sfreqs size: 1x(A)
@@ -33,3 +33,10 @@ Language: Matlab
 
 - median: spect median data
   - 4 channel
+
+- coherence_n: coherence data
+  - channel: F7, F8
+  - size: 60x115
+ 
+- coheren_median: coherence median data
+  - size: 60x115
